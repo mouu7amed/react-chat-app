@@ -1,0 +1,44 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&display=swap");
+
+// fonts
+$poppins: "Poppins", sans-serif;
+
+// colors
+$red: #ff6968;
+$purple: #a334fa;
+$blue: #0695ff;
+$white: #ffffff;
+
+// transition
+$duration: 0.3s;
+
+// spaces
+$headerHeight: 70px;
+
+// media
+@mixin breakpoint($point) {
+  @if ($point == lg) {
+    @media (min-width: 992px) {
+      @content;
+    }
+  } @else if ($point == md) {
+    @media (max-width: 991px) {
+      @content;
+    }
+  } @else if ($point == sm) {
+    @media (max-width: 767px) {
+      @content;
+    }
+  } @else if ($point == mobile) {
+    @media (max-width: 576px) {
+      @content;
+    }
+  }
+}
+
+// layouts
+%flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
