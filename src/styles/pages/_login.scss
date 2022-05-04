@@ -11,12 +11,12 @@
       rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
 
     @include breakpoint(lg) {
-      height: 50vh;
+      min-height: 50vh;
       width: 30vw;
     }
 
     @include breakpoint(md) {
-      height: 50vh;
+      min-height: 50vh;
       width: 50vw;
     }
 
@@ -81,27 +81,34 @@
 
       .or {
         opacity: 0.5;
-        margin: 0.5rem 0;
+        margin: 0.1rem 0;
       }
 
       .google {
         @extend %flex-center;
         border: none;
         outline: none;
-        background-color: $white;
-        color: $red;
+        background-color: $red;
+        color: $white;
+        padding: 0.5rem 1rem;
         border-radius: 1rem;
         cursor: pointer;
         transition: $duration;
+        width: 100px;
 
         &:hover {
           opacity: 0.6;
         }
 
         .login-icon {
-          margin: 0 0.5rem;
+          margin-left: 0.5rem;
         }
       }
+    }
+
+    .error {
+      color: $red;
+      margin-top: 0.8rem;
     }
   }
 }

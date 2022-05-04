@@ -62,14 +62,14 @@ body {
 
 @media (min-width: 992px) {
   .login form {
-    height: 50vh;
+    min-height: 50vh;
     width: 30vw;
   }
 }
 
 @media (max-width: 991px) {
   .login form {
-    height: 50vh;
+    min-height: 50vh;
     width: 50vw;
   }
 }
@@ -148,18 +148,20 @@ body {
 
 .login form .login-btns .or {
   opacity: 0.5;
-  margin: 0.5rem 0;
+  margin: 0.1rem 0;
 }
 
 .login form .login-btns .google {
   border: none;
   outline: none;
-  background-color: #ffffff;
-  color: #ff6968;
+  background-color: #ff6968;
+  color: #ffffff;
+  padding: 0.5rem 1rem;
   border-radius: 1rem;
   cursor: pointer;
   -webkit-transition: 0.3s;
   transition: 0.3s;
+  width: 100px;
 }
 
 .login form .login-btns .google:hover {
@@ -167,7 +169,12 @@ body {
 }
 
 .login form .login-btns .google .login-icon {
-  margin: 0 0.5rem;
+  margin-left: 0.5rem;
+}
+
+.login form .error {
+  color: #ff6968;
+  margin-top: 0.8rem;
 }
 
 .chats {
