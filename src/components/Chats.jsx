@@ -5,7 +5,6 @@ import { auth } from "../utilities/firebase";
 import { useAuth } from "../utilities/Auth";
 import axios from "axios";
 import { Loading } from "./Loading";
-import { Login } from "./Login";
 
 export const Chats = () => {
   const [loading, setLoading] = useState(true);
@@ -82,6 +81,11 @@ export const Chats = () => {
           projectID={process.env.REACT_APP_CHAT_ENGINE_ID}
           userName={user.email}
           userSecret={user.uid}
+          onNewMessage={() =>
+            new Audio(
+              "https://chat-engine-assets.s3.amazonaws.com/click.mp3"
+            ).play()
+          }
         />
       </div>
     </section>

@@ -1,5 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&display=swap");
-#root, .login form .login-btns .loginBtn, .login form .login-btns .google {
+#root, .login form .google {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -87,76 +87,14 @@ body {
 }
 
 .login form .welcome {
-  margin-bottom: 0.5rem;
-  font-size: 1rem;
-}
-
-.login form label {
   text-transform: uppercase;
   font-weight: 500;
   font-size: 1.4rem;
-  margin-top: 0.5rem;
+  margin: 1rem 0.5rem 2rem;
+  font-size: 1rem;
 }
 
-.login form input {
-  border: 1px solid #a334fa;
-  border-radius: 1rem;
-  outline: none;
-  padding: 0.5rem 1rem;
-  margin: 0.5rem;
-  -webkit-transition: 0.3s;
-  transition: 0.3s;
-}
-
-.login form input:focus {
-  border: 1px solid #0695ff;
-  caret-color: #0695ff;
-}
-
-.login form .login-btns {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  margin-top: 0.5rem;
-}
-
-.login form .login-btns .loginBtn {
-  border: none;
-  outline: none;
-  background-color: #a334fa;
-  color: #ffffff;
-  padding: 0.5rem 1rem;
-  border-radius: 1rem;
-  cursor: pointer;
-  -webkit-transition: 0.3s;
-  transition: 0.3s;
-  width: 100px;
-}
-
-.login form .login-btns .loginBtn:hover {
-  background-color: #0695ff;
-}
-
-.login form .login-btns .loginBtn .login-icon {
-  margin-left: 0.5rem;
-}
-
-.login form .login-btns .or {
-  opacity: 0.5;
-  margin: 0.1rem 0;
-}
-
-.login form .login-btns .google {
+.login form .google {
   border: none;
   outline: none;
   background-color: #ff6968;
@@ -166,19 +104,18 @@ body {
   cursor: pointer;
   -webkit-transition: 0.3s;
   transition: 0.3s;
-  width: 100px;
 }
 
-.login form .login-btns .google:hover {
+.login form .google:hover {
   opacity: 0.6;
 }
 
-.login form .login-btns .google .login-icon {
+.login form .google .login-icon {
   margin-left: 0.5rem;
 }
 
-.login form .error {
-  color: #ff6968;
+.login form .tooltip {
+  color: #4acf82;
   margin-top: 0.8rem;
 }
 

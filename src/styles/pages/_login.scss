@@ -27,88 +27,35 @@
     }
 
     .welcome {
-      margin-bottom: 0.5rem;
-      font-size: 1rem;
-    }
-
-    label {
       text-transform: uppercase;
       font-weight: 500;
       font-size: 1.4rem;
-      margin-top: 0.5rem;
+      margin: 1rem 0.5rem 2rem;
+      font-size: 1rem;
     }
 
-    input {
-      border: 1px solid $purple;
-      border-radius: 1rem;
+    .google {
+      @extend %flex-center;
+      border: none;
       outline: none;
+      background-color: $red;
+      color: $white;
       padding: 0.5rem 1rem;
-      margin: 0.5rem;
+      border-radius: 1rem;
+      cursor: pointer;
       transition: $duration;
 
-      &:focus {
-        border: 1px solid $blue;
-        caret-color: $blue;
+      &:hover {
+        opacity: 0.6;
+      }
+
+      .login-icon {
+        margin-left: 0.5rem;
       }
     }
 
-    .login-btns {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      flex-direction: column;
-      margin-top: 0.5rem;
-
-      .loginBtn {
-        @extend %flex-center;
-        border: none;
-        outline: none;
-        background-color: $purple;
-        color: $white;
-        padding: 0.5rem 1rem;
-        border-radius: 1rem;
-        cursor: pointer;
-        transition: $duration;
-        width: 100px;
-
-        &:hover {
-          background-color: $blue;
-        }
-
-        .login-icon {
-          margin-left: 0.5rem;
-        }
-      }
-
-      .or {
-        opacity: 0.5;
-        margin: 0.1rem 0;
-      }
-
-      .google {
-        @extend %flex-center;
-        border: none;
-        outline: none;
-        background-color: $red;
-        color: $white;
-        padding: 0.5rem 1rem;
-        border-radius: 1rem;
-        cursor: pointer;
-        transition: $duration;
-        width: 100px;
-
-        &:hover {
-          opacity: 0.6;
-        }
-
-        .login-icon {
-          margin-left: 0.5rem;
-        }
-      }
-    }
-
-    .error {
-      color: $red;
+    .tooltip {
+      color: $green;
       margin-top: 0.8rem;
     }
   }
